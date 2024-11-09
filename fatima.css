@@ -1,0 +1,278 @@
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li{
+    margin-right: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+nav a:hover{
+    color: #ccc;
+}
+
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        margin-top: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin-bottom: 10PXµ;
+    }
+}
+.produits{
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+.produits h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.produit{
+    width: 23%;
+    margin: 20px 1%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+    display: inline-block;
+}
+
+.produit img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+.produit h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produit p{
+    font-size: 16px;
+    color: #666;
+}
+.produit .prix{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+}
+.produit .bnt{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produit .bnt:hover{
+    background-color: #444;
+}
+
+
+@media(max-width:768px){
+    .produit{
+        width: 48%;
+        margin: 20px 2%;
+    }
+}
+
+
+@media(max-width:480px){
+    .produit{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .containeur{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col-4{
+    width: 33.33%;
+    margin: 20px;
+
+}
+
+footer h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ footer P{
+    font-size: 16px;
+    color: #ccc;
+ }
+ footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ footer li{
+    margin-bottom: 10px;
+ }
+
+ footer a{
+    color:#fff ;
+    text-decoration: none;
+ }
+
+ footer A:hover{
+    color: #ccc;
+ }
+
+ footer .copyright{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+ }
+ #back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: none;
+ }
+ #back-to-top:hover{
+    background-color: #444;
+ }
+ #back-to-top a{
+    text-decoration: none;
+    color: #fff;
+ }
+ .slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+ }
+ figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+ }
+ .slide{
+    position: relative;
+    width: 25%;
+    float: left;
+ }
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(26, 17, 17);
+    text-shadow: 1px 1px 2px rgba(0, 0,0, 0.5);
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    2%{
+        left: -100;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+
+}
